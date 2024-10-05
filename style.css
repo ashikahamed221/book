@@ -1,0 +1,153 @@
+
+.poppins-regular {
+ font-family: "popins", system-ui;
+ font-weight: 400;
+ font-style: normal;
+}
+*{
+    padding:0px;
+    margin: 0px;
+
+}
+
+.nav{
+    background-color:rgb(12, 35, 35);
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+.book-container{
+    background-color: black;
+    color: aliceblue;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url("wave-haikei\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+}
+.book-container button{
+    background-color:skyblue;
+    color: black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    left:20px;
+}
+.book-container h2{
+    color: skyblue;
+}
+.add-button{
+    background-color: skyblue;
+    color: black;
+    border-radius: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    left:90%;
+    transition: 0.8s;
+}
+.add-button:hover{
+    transform: scale(1.1);
+}
+.popup-overlay{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 103%;
+    height: 100%;
+    top:0%;
+    z-index: 1;
+    display: none;
+}
+.pop-box{
+    background-color:orange;
+    color: white;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top:20%;
+    left:20%;
+    z-index: 2;
+    display: none;
+    background-image: url("wave-haikei\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+}
+.pop-box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin:5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+    color: aliceblue;
+}
+.pop-box textarea{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin:5px;
+    padding: 5px;
+    font-size: 20px;
+    border:solid black 2px;
+    color: aliceblue;
+}
+.pop-box input::placeholder{
+    color:white;
+}
+.pop-box textarea::placeholder{
+    color: white;
+}
+.pop-box button{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    margin: 5px;
+}
+.pop-box input:focus{
+    outline: none;
+}
+.pop-box textarea:focus{
+    outline: none;
+}
+@media screen and (max-width:600px) {
+    .add-button{
+        position: fixed;
+        left: 70%;
+        bottom: 10px;
+    }
+    .book-container{
+        width: 75%;
+    }
+    .pop-box{
+        position: absolute;
+        width: 40%;
+        height: 40%;
+    }
+    .popup-overlay{
+        position: absolute;
+        width: 115%;
+        height: 100%;
+       
+    }
+}
+   
